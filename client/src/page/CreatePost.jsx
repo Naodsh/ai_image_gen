@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -154,3 +155,14 @@ const CreatePost = () => {
 };
 
 export default CreatePost;
+=======
+import React from 'react'
+
+const CreatePost = () => {
+  return (
+    <div>Create-Post</div>
+  )
+}
+
+export default CreatePost
+>>>>>>> 66eef333c9c6f7fdd3c1795c274462849f44a739

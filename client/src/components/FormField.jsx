@@ -1,5 +1,6 @@
 import React from 'react';
 
+<<<<<<< HEAD
 const FormField = ({
   labelName,
   type,
@@ -13,6 +14,12 @@ const FormField = ({
   <div>
     <div className="flex items-center gap-2 mb-2">
       <label
+=======
+const FormField = () => (
+  <div>
+    <div className="flex items-center gap-2 mb-2">
+      {/* <label
+>>>>>>> 66eef333c9c6f7fdd3c1795c274462849f44a739
         htmlFor={name}
         className="block text-sm font-medium text-gray-900"
       >
@@ -26,9 +33,15 @@ const FormField = ({
         >
           Surprise me
         </button>
+<<<<<<< HEAD
       )}
     </div>
     <input
+=======
+      )} */}
+    </div>
+    {/* <input
+>>>>>>> 66eef333c9c6f7fdd3c1795c274462849f44a739
       type={type}
       id={name}
       name={name}
@@ -37,7 +50,11 @@ const FormField = ({
       value={value}
       onChange={handleChange}
       required
+<<<<<<< HEAD
     />
+=======
+    /> */}
+>>>>>>> 66eef333c9c6f7fdd3c1795c274462849f44a739
   </div>
 );
 
