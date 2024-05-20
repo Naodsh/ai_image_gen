@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, FormField, Loader } from '../components';
 
-<<<<<<< HEAD
 const RenderCards = ({ data, title }) => {
   if (data?.length > 0) {
     return (
@@ -14,8 +13,6 @@ const RenderCards = ({ data, title }) => {
   );
 };
 
-=======
->>>>>>> 66eef333c9c6f7fdd3c1795c274462849f44a739
 const Home = () => {
 
 const [loading, setLoading] = useState(false);
@@ -32,24 +29,10 @@ const [searchedResults, setSearchedResults] = useState(null);
       </div>
 
       <div className="mt-16">
-<<<<<<< HEAD
         <FormField />
       </div>
 
       <div className="mt-10">
-=======
-        <FormField
-          // labelName="Search posts"
-          // type="text"
-          // name="text"
-          // placeholder="Search something..."
-          // value={searchText}
-          // handleChange={handleSearchChange}
-        />
-      </div>
-
-      {/* <div className="mt-10">
->>>>>>> 66eef333c9c6f7fdd3c1795c274462849f44a739
         {loading ? (
           <div className="flex justify-center items-center">
             <Loader />
@@ -76,11 +59,7 @@ const [searchedResults, setSearchedResults] = useState(null);
             </div>
           </>
         )}
-<<<<<<< HEAD
       </div>
-=======
-      </div> */}
->>>>>>> 66eef333c9c6f7fdd3c1795c274462849f44a739
     </section>
   )
 }
