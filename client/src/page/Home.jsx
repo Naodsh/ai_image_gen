@@ -1,6 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Card, FormField, Loader } from '../components';
 
+const RenderCards = ({ data, title }) => {
+  if (data?.length > 0) {
+    return (
+      data.map((post) => <Card key={post._id} {...post} />)
+    )
+  }
+
+  return (
+    <h2 className="mt-5 font-bold text-[#6469ff] text-xl uppercase">{title}</h2>
+  );
+};
+
 const Home = () => {
 
 const [loading, setLoading] = useState(false);
@@ -17,20 +29,10 @@ const [searchedResults, setSearchedResults] = useState(null);
       </div>
 
       <div className="mt-16">
-        <FormField
-          // labelName="Search posts"
-          // type="text"
-          // name="text"
-          // placeholder="Search something..."
-          // value={searchText}
-          // handleChange={handleSearchChange}
-        />
-      </div>
-      <div>
-        <Loader />
+        <FormField />
       </div>
 
-      {/* <div className="mt-10">
+      <div className="mt-10">
         {loading ? (
           <div className="flex justify-center items-center">
             <Loader />
@@ -57,7 +59,7 @@ const [searchedResults, setSearchedResults] = useState(null);
             </div>
           </>
         )}
-      </div> */}
+      </div>
     </section>
   )
 }

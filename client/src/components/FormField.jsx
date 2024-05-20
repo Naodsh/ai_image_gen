@@ -1,9 +1,18 @@
 import React from 'react';
 
-const FormField = () => (
+const FormField = ({
+  labelName,
+  type,
+  name,
+  placeholder,
+  value,
+  handleChange,
+  isSurpriseMe,
+  handleSurpriseMe,
+}) => (
   <div>
     <div className="flex items-center gap-2 mb-2">
-      {/* <label
+      <label
         htmlFor={name}
         className="block text-sm font-medium text-gray-900"
       >
@@ -17,9 +26,9 @@ const FormField = () => (
         >
           Surprise me
         </button>
-      )} */}
+      )}
     </div>
-    {/* <input
+    <input
       type={type}
       id={name}
       name={name}
@@ -28,7 +37,7 @@ const FormField = () => (
       value={value}
       onChange={handleChange}
       required
-    /> */}
+    />
   </div>
 );
 
